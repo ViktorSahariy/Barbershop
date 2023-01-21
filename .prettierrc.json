@@ -1,0 +1,13 @@
+{
+	"printWidth" : 100 ,
+	"tabWidth" : 2 ,
+	"useTabs" : false ,
+	"semi" : правда ,
+	"singleQuote" : правда ,
+	" trailingComma" : " es5 " ,
+	"bracketSpacing" : правда ,
+	"jsxBracketSameLine" : false ,
+	"arrowParens" : " уникати " ,
+	"proseWrap" : " завжди " ,
+	"htmlWhitespaceSensitivity" : " css "
+ }
