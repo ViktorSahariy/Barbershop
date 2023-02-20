@@ -1,1 +1,47 @@
- 
+ :root{
+/* FONTS */
+
+/* TEXT COLOR */
+	--main-txt-cl: #303030;
+	--accent-txt-cl:#FF6C00;
+/* BACKGROUD COLORS */
+
+/* OTHER */
+ } 
+
+ bode{
+
+ }
+
+.page {
+
+}
+
+.link {
+	text-decoration: none;
+}
+
+
+
+
+/* HEADER */
+ .header {
+}
+.header-nav {
+}
+.header-logo {
+}
+.header-logo-img {
+}
+.header-list {
+}
+.header-iteam {
+}
+.header-link {
+}
+.header-wrap {
+}
+.header-wrap-link {
+}
+.btn {
+}
