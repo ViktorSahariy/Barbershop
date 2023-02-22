@@ -1,47 +1,119 @@
- :root{
-/* FONTS */
-
-/* TEXT COLOR */
-	--main-txt-cl: #303030;
-	--accent-txt-cl:#FF6C00;
-/* BACKGROUD COLORS */
-
-/* OTHER */
- } 
-
- bode{
-
- }
+:root {
+  /* FONTS */
+  --main-font: 'Open Sans', sans-serif;
+  --second-font: 'Raleway', sans-serif;
+  /* TEXT COLOR */
+  --light-txt-cl: #ffffff;
+  --main-txt-cl: #303030;
+  --accent-txt-cl: #ff6c00;
+  --gris06-txt-cl: rgba(157, 164, 189, 0.6);
+  --grinlight-txt-cl:#9DA4BD;
+  /* BACKGROUD COLORS */
+  --accent-bg-cl: #ff6c00;
+  /* OTHER */
+}
 
 .page {
-
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
 }
 
+/* RESET */
+
+ul li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.header {
+  background-color: rgb(198, 192, 18);
+}
+/* BUTTON */
+.header .btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: var(--light-txt-cl);
+  border: 1px solid var(--accent-bg-cl);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* LINKS SOCIAL */
 .link {
-	text-decoration: none;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(16 / 11);
+  letter-spacing: 0.2em;
+  color: var(--main-txt-cl);
 }
 
-
-
+.link:hover,
+.link:focus {
+  color: var(--accent-txt-cl);
+}
 
 /* HEADER */
- .header {
-}
-.header-nav {
-}
-.header-logo {
-}
-.header-logo-img {
-}
-.header-list {
-}
-.header-iteam {
-}
-.header-link {
-}
-.header-wrap {
-}
+.header .header-list,
 .header-wrap-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  color: var(--light-txt-cl);
 }
-.btn {
+/* Стан ховера посилань */
+.header-iteam:hover,
+.header-wrap-link:hover,
+.header-iteam:focus,
+.header-wrap-link:focus {
+  color: var(--accent-txt-cl);
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  background-color: #ff6c00;
+}
+
+.hero-uppercase {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gris06-txt-cl);
+}
+
+.hero-title {
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+  color: var(--light-txt-cl);
+}
+
+.hero-subtitel {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: calc(30/18);
+	letter-spacing: 0.02em;
+	color: var(--grinlight-txt-cl);
 }
