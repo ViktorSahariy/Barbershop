@@ -7,7 +7,8 @@
   --main-txt-cl: #303030;
   --accent-txt-cl: #ff6c00;
   --gris06-txt-cl: rgba(157, 164, 189, 0.6);
-  --grinlight-txt-cl:#9DA4BD;
+  --grinlight-txt-cl: #9da4bd;
+  --grey-txt-cl: #555555;
   /* BACKGROUD COLORS */
   --accent-bg-cl: #ff6c00;
   /* OTHER */
@@ -41,7 +42,9 @@ a {
   background-color: rgb(198, 192, 18);
 }
 /* BUTTON */
-.header .btn {
+.header .btn,
+.about-btn,
+.price-btn {
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -53,6 +56,19 @@ a {
   border: 1px solid var(--accent-bg-cl);
   border-radius: 25px;
   cursor: pointer;
+}
+
+.slider-btn {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  color: var(--gris06-txt-cl);
+}
+
+.slider-btn.active {
+	color: var(--light-txt-cl);
 }
 
 /* LINKS SOCIAL */
@@ -92,7 +108,14 @@ a {
   background-color: #ff6c00;
 }
 
-.hero-uppercase {
+.hero-list {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+}
+
+.hero-undertitel {
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
@@ -111,11 +134,173 @@ a {
 }
 
 .hero-subtitel {
-	font-weight: 400;
-	font-size: 18px;
-	line-height: calc(30/18);
-	letter-spacing: 0.02em;
-	color: var(--grinlight-txt-cl);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--grinlight-txt-cl);
 }
 
-/* ABOUT */ 
+/* ABOUT */
+.about-undertitel {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--main-txt-cl);
+}
+
+.about-titel {
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--main-txt-cl);
+}
+
+.about-subtitel {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--grey-txt-cl);
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  letter-spacing: 0.02em;
+  color: var(--grey-txt-cl);
+}
+
+/* PRICE */
+.price {
+  background-color: orange;
+}
+
+.price-undertitel {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gris06-txt-cl);
+}
+
+.price-titel {
+  font-family: var(--second-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--light-txt-cl);
+}
+
+.price-iteam {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--grinlight-txt-cl);
+}
+
+/* BENEFIT */
+.benefit-number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  letter-spacing: 0.05em;
+  color: var(--main-txt-cl);
+}
+
+.benefit-symbol {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  color: var(--accent-txt-cl);
+}
+
+.benefit-desc {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  color: var(--main-txt-cl);
+}
+
+.benefit-undertitel {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--main-txt-cl);
+}
+
+.benefit-titel {
+  font-family: var(--second-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--main-txt-cl);
+}
+
+.benefit-subtitel {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--grey-txt-cl);
+}
+
+/* TEAM */
+.team-undertitel {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--main-txt-cl);
+}
+
+.team-titel {
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: var(--main-txt-cl);
+}
+
+.team-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+}
+
+.team-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-txt-cl);
+}
+
+/* GALLARY */
+.gallary-undertitel {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--main-txt-cl);
+}
