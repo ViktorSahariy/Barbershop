@@ -23,6 +23,9 @@
 }
 
 /* RESET */
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+}
 
 ul li {
   list-style: none;
@@ -38,6 +41,10 @@ a {
   color: currentColor;
 }
 
+img {
+	display: block;
+}
+
 .header {
   background-color: rgb(198, 192, 18);
 }
@@ -47,6 +54,7 @@ a {
 .price-btn {
   font-family: inherit;
   font-weight: 600;
+  padding: 12px 20px;
   font-size: 12px;
   line-height: calc(16 / 12);
   letter-spacing: 0.09em;
@@ -68,7 +76,16 @@ a {
 }
 
 .slider-btn.active {
-	color: var(--light-txt-cl);
+  color: var(--light-txt-cl);
+}
+
+.about-btn {
+	color: var(--main-txt-cl);
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: var(--accent-bg-cl);
 }
 
 /* LINKS SOCIAL */
@@ -85,11 +102,16 @@ a {
   color: var(--accent-txt-cl);
 }
 
+.mb20 {
+	margin-bottom: 20px;
+}
+
 /* HEADER */
 .header .header-list,
-.header-wrap-link {
+.header-link {
   font-weight: 600;
   font-size: 12px;
+  margin-right: 40px;
   line-height: calc(16 / 12);
   letter-spacing: 0.1em;
   color: var(--light-txt-cl);
@@ -142,6 +164,9 @@ a {
 }
 
 /* ABOUT */
+.about-wrap {
+	width: 484px;
+}
 .about-undertitel {
   font-weight: 600;
   font-size: 11px;
@@ -171,6 +196,7 @@ a {
 .about-text {
   font-weight: 400;
   font-size: 14px;
+  margin-bottom: 40px;	
   line-height: calc(26 / 14);
   letter-spacing: 0.02em;
   color: var(--grey-txt-cl);
@@ -194,6 +220,7 @@ a {
   font-family: var(--second-font);
   font-style: normal;
   font-weight: 700;
+  margin-bottom: 44px;
   font-size: 42px;
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
@@ -208,7 +235,14 @@ a {
   color: var(--grinlight-txt-cl);
 }
 
+.price-wrap {
+	margin-bottom: 50px;
+}
+
 /* BENEFIT */
+.benefit-wrap {
+	width: ;
+}
 .benefit-number {
   font-weight: 700;
   font-size: 42px;
@@ -272,6 +306,7 @@ a {
   font-family: var(--second-font);
   font-weight: 700;
   font-size: 42px;
+  margin-bottom: 44px;
   line-height: calc(49 / 42);
   letter-spacing: 0.05em;
   color: var(--main-txt-cl);
