@@ -23,8 +23,14 @@
 }
 
 /* RESET */
-h1,h2,h3,h4,h5,h6,p {
-	margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 ul li {
@@ -42,7 +48,17 @@ a {
 }
 
 img {
-	display: block;
+  display: block;
+}
+
+/* КОНТЕЙНЕР */
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  outline: 1px solid red;
 }
 
 .header {
@@ -80,12 +96,12 @@ img {
 }
 
 .about-btn {
-	color: var(--main-txt-cl);
+  color: var(--main-txt-cl);
 }
 
 .btn:hover,
 .btn:focus {
-	background-color: var(--accent-bg-cl);
+  background-color: var(--accent-bg-cl);
 }
 
 /* LINKS SOCIAL */
@@ -103,7 +119,7 @@ img {
 }
 
 .mb20 {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* HEADER */
@@ -165,7 +181,7 @@ img {
 
 /* ABOUT */
 .about-wrap {
-	width: 484px;
+  width: 484px;
 }
 .about-undertitel {
   font-weight: 600;
@@ -196,7 +212,7 @@ img {
 .about-text {
   font-weight: 400;
   font-size: 14px;
-  margin-bottom: 40px;	
+  margin-bottom: 40px;
   line-height: calc(26 / 14);
   letter-spacing: 0.02em;
   color: var(--grey-txt-cl);
@@ -236,12 +252,12 @@ img {
 }
 
 .price-wrap {
-	margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* BENEFIT */
 .benefit-wrap {
-	width: ;
+  width: ;
 }
 .benefit-number {
   font-weight: 700;
