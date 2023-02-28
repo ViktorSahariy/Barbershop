@@ -12,6 +12,8 @@
   /* BACKGROUD COLORS */
   --accent-bg-cl: #ff6c00;
   /* OTHER */
+  --iteam: 1;
+  --indent: 30px;
 }
 
 .page {
@@ -52,8 +54,8 @@ img {
 }
 
 .section {
-	padding-top: 120px;
-	padding-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 /* КОНТЕЙНЕР */
@@ -107,6 +109,17 @@ img {
 .btn:hover,
 .btn:focus {
   background-color: var(--accent-bg-cl);
+}
+
+/* CARD SET */
+.card-set {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--indent);
+}
+
+.card-set-iteam {
+	flex-basis: calc((100% - var(--indent) * (var(--iteam) - 1)) / var(--iteam));
 }
 
 /* LINKS SOCIAL */
@@ -170,8 +183,8 @@ img {
 }
 
 .header-wrap {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /* HERO */
@@ -214,13 +227,13 @@ img {
 
 /* ABOUT */
 .about-container {
-	display: flex;
-	gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .about-list {
-	display: flex;
-	gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .about-wrap {
@@ -262,9 +275,27 @@ img {
 }
 
 /* PRICE */
-/* .price-container{
-	display: flex;
-} */
+.price-wrap {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 44px;
+}
+
+.price-list {
+  flex-basis: 570px;
+}
+
+.price-list:first-child {
+  padding: 20px 30px;
+  outline: 1px solid red;
+}
+
+.price-list:last-child {
+  padding: 20px 30px;
+  outline: 1px solid rgb(65, 16, 200);
+}
+
 .price {
   background-color: orange;
 }
@@ -290,6 +321,7 @@ img {
 }
 
 .price-iteam {
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 18px;
   line-height: calc(30 / 18);
@@ -297,17 +329,41 @@ img {
   color: var(--grinlight-txt-cl);
 }
 
-.price-wrap {
-  margin-bottom: 50px;
+.price-iteam:last-child {
+  margin-bottom: 0;
+}
+
+.price-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* BENEFIT */
 .benefit-container {
-	display: flex;
+  display: flex;
+  gap: 130px;
 }
+
+.benefit-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  gap: 30px;
+}
+
+.benefit-list {
+  display: flex;
+  justify-content: center;
+  outline: 1px solid red;
+}
+
 .benefit-wrap {
-  width: ;
+	padding: 60px;
+  outline: 1px solid teal;
 }
+
 .benefit-number {
   font-weight: 700;
   font-size: 42px;
@@ -358,6 +414,10 @@ img {
 }
 
 /* TEAM */
+.team-list {
+	--iteam: 3;
+}
+
 .team-undertitel {
   font-weight: 600;
   font-size: 11px;
@@ -396,6 +456,9 @@ img {
 }
 
 /* GALLARY */
+.gallary-list {
+	--iteam: 4;
+}
 .gallary-undertitel {
   font-weight: 600;
   font-size: 11px;
