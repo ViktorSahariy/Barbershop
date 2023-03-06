@@ -15,6 +15,10 @@
   /* OTHER */
   --iteam: 1;
   --indent: 30px;
+
+  --anim-fast: 400ms ease;
+  --anim-slow: 800ms ease-in;
+
 }
 
 .page {
@@ -86,6 +90,7 @@ img {
   border: 1px solid var(--accent-bg-cl);
   border-radius: 25px;
   cursor: pointer;
+  
 }
 
 .slider-btn {
@@ -103,6 +108,7 @@ img {
 
 .about-btn {
   color: var(--main-txt-cl);
+  transition: background-color var(--anim-slow), color var(--accent-bg-cl);
 }
 
 .btn:hover,
@@ -183,12 +189,23 @@ img {
   letter-spacing: 0.1em;
   color: var(--light-txt-cl);
 }
+
+.header-link {
+	/* transition-property: color, letter-spacing ;
+	transition-duration: 400ms, 600ms;
+	transition-timing-function: ease-in, ease-in-out;
+	transition-delay: 0s, 400ms; */
+
+	transition: color var(--anim-fast), letter-spacing var(--anim-slow) 400ms;
+}
+
 /* Стан ховера посилань */
 .header-iteam:hover,
-.header-wrap-link:hover,
+.header-link:hover,
 .header-iteam:focus,
-.header-wrap-link:focus {
+.header-link:focus {
   color: var(--accent-txt-cl);
+  letter-spacing: 0.5em;
   cursor: pointer;
 }
 
@@ -575,6 +592,25 @@ img {
   --iteam: 3;
 }
 
+.team-img {
+	padding-bottom: 30px;
+}
+
+.team-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.team-icons {
+	content: "";
+	width: 44px;
+	height: 44px;
+
+	background-color: red;
+}
+
 .team-uppertitel {
   display: flex;
   align-items: center;
@@ -611,6 +647,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
+  padding-bottom: 8px;
 }
 
 .team-desc {
@@ -620,6 +657,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-txt-cl);
+  padding-bottom: 30px;
 }
 
 /* GALLARY */
