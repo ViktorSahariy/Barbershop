@@ -603,12 +603,13 @@ img {
 	gap: 10px;
 }
 
-.team-icons {
+.team-link > li {
 	content: "";
 	width: 44px;
 	height: 44px;
+	border-radius: 50%;
 
-	background-color: red;
+	background-color: var(--light-txt-cl);
 }
 
 .team-uppertitel {
