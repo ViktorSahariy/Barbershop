@@ -597,6 +597,7 @@ img {
 }
 
 .team-link {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -605,12 +606,15 @@ img {
 
 .team-link > li {
 	content: "";
+	display: flex;
+	justify-content: center;
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
-
 	background-color: var(--light-txt-cl);
+	transition-delay: 0s, 800ms;
 }
+
 
 .team-uppertitel {
   display: flex;
@@ -659,6 +663,12 @@ img {
   letter-spacing: 0.02em;
   color: var(--accent-txt-cl);
   padding-bottom: 30px;
+}
+
+.team-icons:hover,
+.team-icons:focus {
+	fill: var(--accent-bg-cl);
+
 }
 
 /* GALLARY */
