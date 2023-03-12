@@ -10,6 +10,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="./modern-normalize.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
@@ -24,15 +26,16 @@
 						height="56" />
 				</a>
 				<ul class="header-list">
-					<li class="header-iteam"><a class="header-link link" href="">О нас</a></li>
-					<li class="header-iteam"><a class="header-link link" href="">Услуги и цены</a></li>
-					<li class="header-iteam"><a class="header-link link" href="">Мастера</a></li>
-					<li class="header-iteam"><a class="header-link link" href="">Контакты</a></li>
+					<li class="header-iteam"><a class="header-link link" href="#about">О нас</a></li>
+					<li class="header-iteam"><a class="header-link link" href="#price">Услуги и цены</a></li>
+					<li class="header-iteam"><a class="header-link link" href="#teams">Мастера</a></li>
+					<li class="header-iteam"><a class="header-link link" href="#contacts">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="header-wrap">
 				<a class="header-link link" href="tel:+380441111111">+38 044 111 11 11</a>
-				<button class="btn" type="button" data-modal-open>Онлайн-запись</button>
+				<button class="btn animate__animated animate__headShake animate__delay-2s" type="button"
+					data-modal-open>Онлайн-запись</button>
 			</div>
 		</div>
 	</header>
@@ -75,7 +78,7 @@
 			</div>
 		</section>
 		<!-- ABOUT -->
-		<section class="about section">
+		<section class="about section" id="about" data-aos="fade-up" data-aos-duration="2000">
 			<div class="container about-container">
 				<ul class="about-list">
 					<li class="about-iteam">
@@ -99,7 +102,7 @@
 			</div>
 		</section>
 		<!-- PRICE -->
-		<section class="price section">
+		<section class="price section" id="price" data-aos="fade-up" data-aos-duration="2000">
 			<div class="container price-container">
 				<p class="price-uppertitel mb20">Проведи время в компании лучших мастеров</p>
 				<h2 class="price-titel">Услуги и цены</h2>
@@ -129,7 +132,7 @@
 			</div>
 		</section>
 		<!-- BENEFIT -->
-		<section class="benefit section">
+		<section class="benefit section" data-aos="fade-up" data-aos-duration="2000">
 			<div class="container benefit-container">
 				<ul class="benefit-list">
 					<li class="benefit-iteam">
@@ -158,13 +161,20 @@
 			</div>
 		</section>
 		<!-- TEAMS -->
-		<section class="team section">
+		<section class="team section" id="teams">
 			<div class="container">
 				<p class="team-uppertitel mb20">для настоящих ценителей атмосферы</p>
 				<h2 class="team-titel">Наши мастера</h2>
 				<ul class="team-list card-set">
 					<li class="team-iteam card-set-iteam">
-						<img class="team-img" src="./images/team/img-1.jpg" alt="John Smith" width="370" height="346" />
+						<div class="team-thumb">
+							<img class="team-img" src="./images/team/img-1.jpg" alt="John Smith" width="370" height="346" />
+							<div class="overlay">
+								<p class="overlay-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius delectus minima aspernatur
+									architecto, optio quia earum! Iste, aperiam ex? Sequi asperiores accusantium facere hic,
+									cumque perspiciatis neque iusto quia obcaecati.</p>
+							</div>
+						</div>
 						<h3 class="team-name">John Smith</h3>
 						<p class="team-desc">Extreme Barber</p>
 						<ul class="team-link">
@@ -199,7 +209,14 @@
 						</ul>
 					</li>
 					<li class="team-iteam card-set-iteam">
-						<img class="team-img" src="./images/team/img-2.jpg" alt="Michele Doe" width="370" height="346" />
+						<div class="team-thumb">
+							<img class="team-img" src="./images/team/img-2.jpg" alt="John Smith" width="370" height="346" />
+							<div class="overlay">
+								<p class="overlay-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius delectus minima aspernatur
+									architecto, optio quia earum! Iste, aperiam ex? Sequi asperiores accusantium facere hic,
+									cumque perspiciatis neque iusto quia obcaecati.</p>
+							</div>
+						</div>
 						<h3 class="team-name">Michele Doe</h3>
 						<p class="team-desc">Extreme Barber</p>
 						<ul class="team-link">
@@ -234,7 +251,14 @@
 						</ul>
 					</li>
 					<li class="team-iteam card-set-iteam">
-						<img class="team-img" src="./images/team/img-3.jpg" alt="Alan Black" width="370" height="346" />
+						<div class="team-thumb">
+							<img class="team-img" src="./images/team/img-3.jpg" alt="John Smith" width="370" height="346" />
+							<div class="overlay">
+								<p class="overlay-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius delectus minima aspernatur
+									architecto, optio quia earum! Iste, aperiam ex? Sequi asperiores accusantium facere hic,
+									cumque perspiciatis neque iusto quia obcaecati.</p>
+							</div>
+						</div>
 						<h3 class="team-name">Alan Black</h3>
 						<p class="team-desc">Extreme Barber</p>
 						<ul class="team-link">
@@ -276,16 +300,19 @@
 				<p class="gallary-uppertitel mb20">На латинском языке “барба” означает “борода”</p>
 				<h2 hidden>our gallary</h2>
 				<ul class="gallary-list card-set ">
-					<li class="gallary-iteam card-set-iteam">
+					<li class="gallary-iteam card-set-iteam" data-aos="fade-right" data-aos-duration="1000">
 						<img class="gallary-img" src="./images/gallery/img-1.jpg" alt="#" width="270" height="360">
 					</li>
-					<li class="gallary-iteam card-set-iteam">
+					<li class="gallary-iteam card-set-iteam" data-aos="fade-right" data-aos-duration="1000"
+						data-aos-delay="500">
 						<img class="gallary-img" src="./images/gallery/img-2.jpg" alt="#" width="270" height="360">
 					</li>
-					<li class="gallary-iteam card-set-iteam">
+					<li class="gallary-iteam card-set-iteam" data-aos="fade-right" data-aos-duration="1000"
+						data-aos-delay="1000">
 						<img class="gallary-img" src="./images/gallery/img-3.jpg" alt="#" width="270" height="360">
 					</li>
-					<li class="gallary-iteam card-set-iteam">
+					<li class="gallary-iteam card-set-iteam" data-aos="fade-right" data-aos-duration="1000"
+						data-aos-delay="1500">
 						<img class="gallary-img" src="./images/gallery/img-4.jpg" alt="#" width="270" height="360">
 					</li>
 				</ul>
@@ -293,7 +320,7 @@
 			</div>
 		</section>
 		<!-- CONTACTS -->
-		<div class="contacts-group">
+		<div class="contacts-group" id="contacts">
 			<div class="container contacts-group-container">
 				<section class="booking section">
 					<h2 class="booking-titel">Онлайн-запись</h2>
@@ -343,6 +370,8 @@
 	<!-- HEADER SCROLL, MODAL WINDOWS -->
 	<script src="./js/modal.js"></script>
 	<script src="./js/header-scroll.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="./js/aos-animate.js"></script>
 </body>
 
 </html>і
