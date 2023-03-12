@@ -18,7 +18,6 @@
 
   --anim-fast: 400ms ease;
   --anim-slow: 800ms ease-in;
-
 }
 
 .page {
@@ -90,7 +89,6 @@ img {
   border: 1px solid var(--accent-bg-cl);
   border-radius: 25px;
   cursor: pointer;
-  
 }
 
 .slider-btn {
@@ -191,12 +189,12 @@ img {
 }
 
 .header-link {
-	/* transition-property: color, letter-spacing ;
+  /* transition-property: color, letter-spacing ;
 	transition-duration: 400ms, 600ms;
 	transition-timing-function: ease-in, ease-in-out;
 	transition-delay: 0s, 400ms; */
 
-	transition: color var(--anim-fast), letter-spacing var(--anim-slow) 400ms;
+  transition: color var(--anim-fast), letter-spacing var(--anim-slow) 400ms;
 }
 
 /* Стан ховера посилань */
@@ -225,15 +223,27 @@ img {
   display: flex;
   align-items: center;
   overflow: hidden;
-  width: 155px;
+  width: 95px;
 }
 
 .hero-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: calc(15 / 11);
   letter-spacing: 0.2em;
+  padding-bottom: 200px;
+  transform: rotate(270deg);
 }
+
+.hero-list::before {
+	content: '';
+	width: 60px;
+	height: 1px;
+	background-color: var(--main-txt-cl);
+ }
 
 .hero-uppertitel {
   display: flex;
@@ -262,6 +272,8 @@ img {
   line-height: calc(85 / 72);
   letter-spacing: 0.05em;
   color: var(--light-txt-cl);
+
+  /* transform: scale(0.5); */
 }
 
 .hero-subtitel {
@@ -593,28 +605,26 @@ img {
 }
 
 .team-img {
-	padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .team-link {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .team-link > li {
-	content: "";
-	display: flex;
-	justify-content: center;
-	width: 44px;
-	height: 44px;
-	border-radius: 50%;
-	background-color: var(--light-txt-cl);
-	transition-delay: 0s, 800ms;
+  content: '';
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--light-txt-cl);
 }
-
 
 .team-uppertitel {
   display: flex;
@@ -667,8 +677,11 @@ img {
 
 .team-icons:hover,
 .team-icons:focus {
-	fill: var(--accent-bg-cl);
+  fill: var(--accent-bg-cl);
+}
 
+.team-icons {
+  transition: fill var(--anim-slow);
 }
 
 /* GALLARY */
@@ -776,9 +789,9 @@ img {
 }
 
 .is-hidden {
-	opacity: 0;
-	pointer-events: none;
-	visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .modal {
@@ -795,22 +808,21 @@ img {
 }
 
 .modal-btn {
-	position: absolute;
-	top: 10px;
-	right: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 
-	width: 35px;
-	height: 35px;
+  width: 35px;
+  height: 35px;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-	padding: 0;
-	border: 1px solid var(--accent-bg-cl);
+  padding: 0;
+  border: 1px solid var(--accent-bg-cl);
 
-	border-radius: 50%;
+  border-radius: 50%;
 
-	cursor: pointer;
-
+  cursor: pointer;
 }
