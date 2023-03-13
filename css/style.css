@@ -86,7 +86,7 @@ img {
   text-transform: uppercase;
   background-color: transparent;
   color: var(--light-txt-cl);
-  border: 1px solid var(--accent-bg-cl);
+  border: 2px solid var(--accent-bg-cl);
   border-radius: 25px;
   cursor: pointer;
 }
@@ -239,11 +239,11 @@ img {
 }
 
 .hero-list::before {
-	content: '';
-	width: 60px;
-	height: 1px;
-	background-color: var(--main-txt-cl);
- }
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: var(--main-txt-cl);
+}
 
 .hero-uppertitel {
   display: flex;
@@ -254,7 +254,7 @@ img {
   line-height: calc(15 / 11);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--gris06-txt-cl);
+  color: aliceblue;
 }
 
 .hero-uppertitel::before {
@@ -262,7 +262,7 @@ img {
   display: block;
   width: 60px;
   height: 1px;
-  background-color: var(--gris06-txt-cl);
+  background-color: aliceblue;
 }
 
 .hero-title {
@@ -271,8 +271,8 @@ img {
   font-size: 72px;
   line-height: calc(85 / 72);
   letter-spacing: 0.05em;
-  color: var(--light-txt-cl);
-  color: transparent;
+  color: var(--accent-txt-cl);
+  /* color: transparent;
   -webkit-text-stroke: 2px var(--grey-txt-cl);
   -webkit-background-clip: text;
   background-clip: text;
@@ -280,30 +280,30 @@ img {
   background-size: 450px;
   background-repeat: no-repeat;
   background-position: left -450px center;
-  transition: background-position 400ms;
+  transition: background-position 400ms; */
 
-  /* transform: scale(0.5);
-  animation: slide-right 1000ms ease-in 200ms  both; */
+  /* transform: scale(0.5); */
+  animation: slide-right 1000ms ease-in 200ms both;
 }
 
 .hero-title:hover {
-	background-position: left 0 center;
+  background-position: left 0 center;
 }
 
 @keyframes slide-right {
-	0%{
+  0% {
     opacity: 0;
-	 transform: translateX(-251px) scale(0.7);
-	}
+    transform: translateX(-251px) scale(0.7);
+  }
 
-	50%{
-		transform: translateX(0) scale(0.7);
-	}
+  50% {
+    transform: translateX(0) scale(0.7);
+  }
 
-	100%{
-		opacity: 1;
-		transform: scale(1);
-	}
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .hero-subtitel {
@@ -322,7 +322,7 @@ img {
   margin-top: -120px;
   background-color: #403f43;
 
-  background-image: url(../images/header/slider/img-3.jpg);
+  background-image: url(../images/header/V.Saharii_barbershop_black_of_white_b6b61b16-63d3-4338-b203-dc6e8a678f0b.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -466,7 +466,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--dark-bg-color);
-  background-image: url(../images/price/img-price.png);
+  background-image: url(../images/price/V.Saharii_barbershop_black_of_white_9d42ca09-9289-48dd-8703-59188809ef26.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -527,7 +527,7 @@ img {
 }
 
 .price-list:hover {
-	transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 .price-iteam::before {
@@ -650,33 +650,32 @@ img {
 }
 
 .team-thumb {
-	position: relative;
-	overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	transform: translateY(100%);
-	padding: 20px;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	backdrop-filter: blur(4px);
-	background-color: rgba(0, 0, 0, 0.2);
-	transition: transform var(--anim-fast);
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: transform var(--anim-fast);
 }
 
 .overlay-desc {
-	color: var(--light-txt-cl);
+  color: var(--light-txt-cl);
 }
 
 .team-iteam:hover .overlay {
-	transform: translateY(0);
+  transform: translateY(0);
 }
 
 .team-link {
@@ -873,7 +872,7 @@ img {
 
   width: 500px;
   height: 400px;
-
+  padding: 20px;
   background-color: var(--light-txt-cl);
   border-radius: 16px;
 }
