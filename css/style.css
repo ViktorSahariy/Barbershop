@@ -581,16 +581,18 @@ img {
  /* BENEFIRS */
 
 .benefit-container {
-  display: flex;
-  gap: 130px;
+  margin: auto;
 }
 
 .benefit-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-between;
-  gap: 30px;
+	max-width: 370px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	margin-left: auto;
 }
 
 .benefit-list {
@@ -660,6 +662,28 @@ img {
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
   color: var(--grey-txt-cl);
+}
+
+.benefit {
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
+
+.benefit-container {
+	flex-direction: row;
+}
+
+.benefits-item:not(:last-child) {
+	margin: 0;
+}
+
+.benefits-item:last-child(2n) {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.benefit-left-side {
+	flex-basis: 50%;
 }
 
  /* TEAM */
