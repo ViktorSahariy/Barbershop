@@ -1,0 +1,10 @@
+{
+	"Print to console": {
+		"scope": "html, css",
+		"prefix": "com",
+		"body": [
+			// "",
+		],
+		"description": "Simple comments for html and css"
+	}
+}

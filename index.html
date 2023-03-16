@@ -97,7 +97,7 @@
 						когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая
 						всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам
 						приходит! </p>
-					<button class="about-btn btn" type="button">Онлайн-запись</button>
+					<button class="about-btn btn" type="button data-modal-open">Онлайн-запись</button>
 				</div>
 			</div>
 		</section>
@@ -128,7 +128,7 @@
 								грн.</span></li>
 					</ul>
 				</div>
-				<button class="price-btn btn" type="button">Онлайн-запись</button>
+				<button class="price-btn btn" type="button data-modal-open">Онлайн-запись</button>
 			</div>
 		</section>
 		<!-- BENEFIT -->
@@ -360,6 +360,7 @@
 			</ul>
 		</div>
 	</footer>
+
 	<!-- MODAL WINDOWS -->
 	<div class="backdrop is-hidden" data-modal>
 		<div class="modal">
@@ -372,41 +373,42 @@
 				<strong class="register-form-titel">Залишіть свої дані, ми вам передзвонимо</strong>
 				<div class="register-form-group" role="group">
 					<label class="register-form-field">
-						<input class="register-form-input" type="text" name="user-name" required minlength="3" placeholder=" ">
+						<input class="register-form-input" type="text" name="user-name" required minlength="3"
+							placeholder=" ">
 						<span class="register-form-label">Ім'я</span>
 						<svg class="register-form-icon" width="22" height="22">
 							<use href="./images/icons/icons.svg#icon-user"></use>
 						</svg>
 					</label>
 					<label class="register-form-field">
-						<input class="register-form-input" type="tel" name="user-phone" required minlength="12" maxlength="12" placeholder=" ">
+						<input class="register-form-input" type="tel" name="user-phone" required minlength="12" maxlength="12"
+							placeholder="+38 099 999 99 99">
 						<span class="register-form-label">Телефон</span>
 						<svg class="register-form-icon" width="22" height="22">
 							<use href="./images/icons/icons.svg#icon-mobile"></use>
 						</svg>
 					</label>
 					<label class="register-form-field">
-						<input class="register-form-input" type="email" name="user-email" placeholder=" ">
+						<input class="register-form-input" type="email" name="user-email" placeholder="example@mail.com">
 						<span class="register-form-label">Пошта</span>
 						<svg class="register-form-icon" width="22" height="22">
 							<use href="./images/icons/icons.svg#icon-envelop"></use>
 						</svg>
 					</label>
 					<label class="register-form-field">
+						<label class="register-form-heading">Message</label>
 						<textarea class="register-form-message" name="user-text" rows="5"
 							placeholder="Введіть текст"></textarea>
 					</label>
 				</div>
 				<label class="register-form-agreement">
-					<input class="register-form-checkbox" type="checkbox">
+					<input class="register-form-checkbox visually-hidden" type="checkbox">
 					<svg class="register-form-icons" width="20" height="20">
-						<use href="./images/icons/icons.svg#icon-checkbox-unchecked"></use>
+						<use class="icon-cheked" href="./images/icons/icons.svg#icon-checkbox-unchecked"></use>
+						<use class="icon-uncheked" href="./images/icons/icons.svg#icon-checkbox-checked"></use>
 					</svg>
-					<svg class="register-form-icons" width="20" height="20">
-						<use href="./images/icons/icons.svg#icon-checkbox-checked"></use>
-					</svg>
-					<span class="register-form-desc">Погоджуюся з розсилкою та приймаю <a class="register-form-link"
-							href="#">Умови договору</a>
+					<span class="register-form-desc">Погоджуюся з розсилкою та приймаю 
+						<a class="register-form-link" href="" target="_blank">Умови договору</a>
 					</span>
 				</label>
 				<button class="register-form-btn btn" type="submit">Відправити</button>
