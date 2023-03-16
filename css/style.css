@@ -76,7 +76,8 @@ img {
 .header .btn,
 .about-btn,
 .price-btn,
-.booking-btn {
+.booking-btn,
+.register-form-btn {
   font-family: inherit;
   font-weight: 600;
   padding: 12px 20px;
@@ -751,7 +752,7 @@ img {
 }
 
 .team-icons {
-  transition: fill var(--anim-slow);
+  transition: fill var(--anim-fast);
 }
 
 /* GALLARY */
@@ -846,6 +847,51 @@ img {
   color: var(--light-txt-cl);
 }
 
+/* FOOTER */
+.footer-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px 73px 8px;
+  gap: 40px;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.footer-uppertitel {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: var(--grinlight-txt-cl);
+}
+
+.footer-list::before {
+	content: '';
+	width: 60px;
+	height: 1px;
+	background-color: var(--main-txt-cl);
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: var(--main-txt-cl);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+	color: var(--accent-txt-cl);
+}
+
 /* MODAL WINDOWS */
 .backdrop {
   position: fixed;
@@ -870,20 +916,20 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 500px;
-  height: 400px;
-  padding: 20px;
+  width: 530px;
+  min-height: 400px;
+  padding: 20px 35px;
   background-color: var(--light-txt-cl);
   border-radius: 16px;
 }
 
 .modal-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -16px;
+  right: -16px;
 
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
 
   display: flex;
   align-items: center;
@@ -893,6 +939,85 @@ img {
   border: 1px solid var(--accent-bg-cl);
 
   border-radius: 50%;
-
+  background-color: var(--light-txt-cl);
+	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+
+.register-form-titel {
+	display: block;
+	align-items: center;
+	font-size: 19px;
+	margin-bottom: 25px;
+}
+
+.register-form-group {
+	margin-bottom: 20px;
+}
+
+.register-form-field{
+	position: relative;
+	display: block;
+	margin-bottom: 25px;
+}
+
+.register-form-label {
+	position: absolute;
+	top: 50%;
+	left: 42px;
+	transform: translateY(-50%);
+	display: block;
+	transition: transform var(--anim-fast);
+}
+
+.register-form-icon {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+
+	transition: fill var(--anim-fast);
+}
+
+.register-form-input {
+	width: 100%;
+	height: 45px;
+	padding-left: 42px;
+	padding-right: 42px;
+	border: 2px solid var(--accent-bg-cl);
+	border-radius: 10px;
+	outline: transparent;
+	transition: border-color var(--anim-fast);
+}
+
+.register-form-input:focus {
+	background-color: var(--grey-txt-cl);
+}
+
+.register-form-input:focus ~ .register-form-icon,
+.register-form-input:not(:placeholder-shown) + .register-form-label {
+	fill: var(--accent-bg-cl);
+}
+
+.register-form-agreement {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.register-form-btn {
+	display: block;
+	margin: 0 auto;
+	
+}
+
+.register-form-input:focus + .register-form-label,
+.register-form-input:not(:placeholder-shown) + .register-form-label {
+	transform: translate(-42px, -170%) scale(0.8);
+}
+
+/* .register-form-input:focus + .register-form-label,
+.register-form-input:not(:placeholder-shown) + .register-form-label {
+
+} */

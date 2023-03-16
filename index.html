@@ -347,44 +347,69 @@
 			</div>
 		</div>
 	</main>
-	<footer>
-		<div class="container">
-			<p>&#169; Copyright 2020</p>
-			<ul>
-				<li>
-					<a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+	<footer class="footer">
+		<div class="footer-wrap container">
+			<p class="footer-uppertitel">&#169; Copyright 2020</p>
+			<ul class="footer-list">
+				<li class="footer-iteam">
+					<a class="footer-link" href="https://instagram.com" target="_blank"
+						rel="noopener noreferrer">Instagram</a>
+				</li class="footer-iteam">
+				<li><a class="footer-link" href="https://youtube.com" target="_blank" rel="noopener noreferrer">Youtube</a>
 				</li>
-				<li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">Youtube</a></li>
 			</ul>
 		</div>
 	</footer>
 	<!-- MODAL WINDOWS -->
 	<div class="backdrop is-hidden" data-modal>
 		<div class="modal">
-			<button class="modal-btn" type="button" data-modal-close>X <!-- <svg width="20" height="20">
-					<use href=""></use>
-				</svg> -->
+			<button class="modal-btn" type="button" data-modal-close>
+				<svg width="16" height="16">
+					<use href="./images/icons/icons.svg#icon-close"></use>
+				</svg>
 			</button>
 			<form class="register-name" name="regester-name" autocomplete="on" novalidate>
-
-					<label>
-						<span>Имя*</span>
-						<input type="text" name="user-name" placeholder="Viktor Black">
+				<strong class="register-form-titel">Залишіть свої дані, ми вам передзвонимо</strong>
+				<div class="register-form-group" role="group">
+					<label class="register-form-field">
+						<input class="register-form-input" type="text" name="user-name" required minlength="3" placeholder=" ">
+						<span class="register-form-label">Ім'я</span>
+						<svg class="register-form-icon" width="22" height="22">
+							<use href="./images/icons/icons.svg#icon-user"></use>
+						</svg>
 					</label>
-					
-				
-					<label>
-						<span>Телефон*</span>
-						<input type="text" name="user-phone" placeholder="+3055 555 55 55">
+					<label class="register-form-field">
+						<input class="register-form-input" type="tel" name="user-phone" required minlength="12" maxlength="12" placeholder=" ">
+						<span class="register-form-label">Телефон</span>
+						<svg class="register-form-icon" width="22" height="22">
+							<use href="./images/icons/icons.svg#icon-mobile"></use>
+						</svg>
 					</label>
-					
-
-					<label>
-						<span>Cообщение</span>
-						<input type="text" name="user-message" placeholder="Напишіть ваш текст...">
+					<label class="register-form-field">
+						<input class="register-form-input" type="email" name="user-email" placeholder=" ">
+						<span class="register-form-label">Пошта</span>
+						<svg class="register-form-icon" width="22" height="22">
+							<use href="./images/icons/icons.svg#icon-envelop"></use>
+						</svg>
 					</label>
-
-				<button type="submit">Отправить</button>
+					<label class="register-form-field">
+						<textarea class="register-form-message" name="user-text" rows="5"
+							placeholder="Введіть текст"></textarea>
+					</label>
+				</div>
+				<label class="register-form-agreement">
+					<input class="register-form-checkbox" type="checkbox">
+					<svg class="register-form-icons" width="20" height="20">
+						<use href="./images/icons/icons.svg#icon-checkbox-unchecked"></use>
+					</svg>
+					<svg class="register-form-icons" width="20" height="20">
+						<use href="./images/icons/icons.svg#icon-checkbox-checked"></use>
+					</svg>
+					<span class="register-form-desc">Погоджуюся з розсилкою та приймаю <a class="register-form-link"
+							href="#">Умови договору</a>
+					</span>
+				</label>
+				<button class="register-form-btn btn" type="submit">Відправити</button>
 			</form>
 		</div>
 	</div>
