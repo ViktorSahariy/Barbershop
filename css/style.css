@@ -196,7 +196,7 @@ HEADER
   margin-right: auto;
 }
 
-.header__logo{
+.header__logo {
   margin-right: 132px;
 }
 
@@ -228,10 +228,9 @@ HEADER
 }
 
 .header-wrap {
-	display: flex;
-	align-items: center;
- }
- 
+  display: flex;
+  align-items: center;
+}
 
 /*======================================
 The hover link
@@ -478,14 +477,14 @@ ABOUT
   color: var(--grey-txt-cl);
 }
 
-/* PRICE */
+/*======================================
+PRICE
+========================================*/
 
 .price-wrap {
   display: flex;
   justify-content: space-between;
-
   margin-bottom: 44px;
-
   perspective: 1000px;
 }
 
@@ -580,7 +579,7 @@ ABOUT
   background-color: rgba(157, 164, 189, 0.12);
 }
 
-.price-iteam-serv {
+.price-iteam__serv {
   order: -1;
 }
 
@@ -594,9 +593,12 @@ ABOUT
   margin-right: auto;
 }
 
-/* BENEFIRS */
+/*======================================
+BENEFIT
+========================================*/
 
 .benefit-container {
+  display: flex;
   margin: auto;
 }
 
@@ -619,14 +621,6 @@ ABOUT
 
 .benefit-wrap {
   padding: 60px;
-}
-
-.benefit-number {
-  font-weight: 700;
-  font-size: 42px;
-  line-height: calc(57 / 42);
-  letter-spacing: 0.05em;
-  color: var(--main-txt-cl);
 }
 
 .benefit-symbol {
@@ -685,24 +679,9 @@ ABOUT
   padding-bottom: 130px;
 }
 
-.benefit-container {
-  flex-direction: row;
-}
-
-.benefits-item:not(:last-child) {
-  margin: 0;
-}
-
-.benefits-item:last-child(2n) {
-  margin-top: 30px;
-  margin-left: 30px;
-}
-
-.benefit-left-side {
-  flex-basis: 50%;
-}
-
-/* TEAM */
+/*======================================
+TEAM
+========================================*/
 
 .team {
   background-color: #f7f7f7;
