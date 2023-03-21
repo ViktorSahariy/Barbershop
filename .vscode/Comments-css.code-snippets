@@ -2,7 +2,7 @@
 	"Print to console": {
 		"scope": "html, css",
 		"prefix": "com",
-		"body": [
+		"body": ["
 			`/******************************************************
 
 			$1
